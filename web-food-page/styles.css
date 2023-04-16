@@ -68,7 +68,7 @@ main h1 {
 .food-item {
   background-color: rgb(228, 206, 182);
   border-radius: 6px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .food-item img {
@@ -86,9 +86,24 @@ main h1 {
   background-color: rgb(228, 157, 44);
   color: white;
   border-radius: 4px;
-  padding: 8px 24px;
+  padding: 0.5rem 1.5rem;
 }
 
 .btn:hover {
   background-color: rgb(221, 134, 34);
+}
+
+@media (max-width: 48rem) {
+  #main-header nav {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  #latest-products ul {
+    display: grid;
+    grid-template-columns: 100%;
+  }
 }
